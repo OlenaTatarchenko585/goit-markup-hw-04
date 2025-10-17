@@ -333,6 +333,7 @@ transform: translateY(0%);
 }
 .portfolio-card {
 width: calc((100% - 48px) / 3);
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-card:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -349,6 +350,10 @@ height: 120px;
 }
 :root {
     --light-text: #f4f4fd;
+    --white-color: #ffffff;
+    --primary-brand: #4d5ae5;
+    --light-color: #f4f4fd;
+
 }
 .box-text {
     position: absolute;
@@ -431,9 +436,9 @@ margin-bottom: 132px;
 display: inline-block;
 justify-content: center;
 width: 40px;
-height: 40px
+height: 40p;
 fill: var(--light-color);
-    /* = #f4f4fd */
+    
 }
  
 
@@ -441,6 +446,10 @@ fill: var(--light-color);
 display: flex;
     gap: 16px;
     margin-right: 120px;
+    display: flex;
+        flex-direction: column;
+        
+        align-items: center;
 }
 .media-text{
 font-weight: 500;
