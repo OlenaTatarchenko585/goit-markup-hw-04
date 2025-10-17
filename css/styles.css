@@ -106,20 +106,22 @@ color: #404bbf;
 }
 /* hero*/
 .hero-container {
-max-width: 1440px;
-    margin: 0;
-    
-    
+      
 }
 .hero {
 padding-top: 188px;
 padding-bottom: 188px;
 background: #2e2f42;
-
+margin: 0 auto;
+max-width: 1440px;
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
-background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/people-office\ 1.jpg);
+background-image: linear-gradient(
+   rgba(46, 47, 66, 0.7),
+   rgba(46, 47, 66, 0.7)), 
+    url(../images/people-office\ 1.jpg);
+
 }
 .hero-title {
 max-width: 496px;
@@ -236,6 +238,9 @@ color: #2e2f42;
 width: calc((100% - 72px) / 4);
 background: #fff;
 border-radius: 0 0 4px 4px;
+box-shadow:lab(from color lightness channel_a channel_b alpha) 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-foto {
@@ -269,6 +274,14 @@ text-align: center;
 
 display: flex;
 gap: 24px;
+
+}
+.icons {
+display: flex;
+justify-content: center;
+gap: 24px;
+width: 40px;
+height: 40px;
 
 }
 /*portfolio */
@@ -327,9 +340,12 @@ color: #434455
 }
 /* footer */
 .footer-container {
+display: flex;
+align-items: baseline;
 
 }
-   
+.logo-conteiner{
+   margin-right: 120px }
 .footer-logo  {
 display: inline-block;    
 margin-bottom: 16px;    
@@ -373,5 +389,21 @@ height: 40px
 
 }
 .media-container {
+display: flex;
+    gap: 16px;
+    margin-right: 120px;
+}
+.media-text{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: css#FFFFFF;
+margin-bottom: 16px;
+    
+}
+.footer-media {
+    display: flex;
+    gap: 16px;
     
 }
