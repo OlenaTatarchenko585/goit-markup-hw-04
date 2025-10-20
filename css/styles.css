@@ -426,11 +426,7 @@ fill: var(--light-color);
 }
  
 
-.media-container {
-display: flex;
-    gap: 16px;
-flex-direction: column;
-align-items: flex-start;
+.media-container  {
 }
 .media-text{
 font-weight: 500;
