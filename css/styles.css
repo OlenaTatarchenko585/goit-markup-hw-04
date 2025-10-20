@@ -246,7 +246,7 @@ width: 264px;
 height: 260px;
 }
 .container-card {
-padding-bottom: 32px;    
+padding: 32px 0;    
 }
 
 .team-title {
